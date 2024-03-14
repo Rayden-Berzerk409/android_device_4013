@@ -19,7 +19,13 @@ LOCAL_PATH := device/alcatel/4013
 
 PRODUCT_CHARACTERISTICS := default
 
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+DEVICE_PACKAGE_OVERLAYS += \
+	$(LOCAL_PATH)/overlay \
+	$(LOCAL_PATH)/overlay-rr \
+
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+	$(LOCAL_PATH)/overlay-rr/packages/apps/Snap
+				
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
     LOCAL_KERNEL := $(LOCAL_PATH)/kernel
