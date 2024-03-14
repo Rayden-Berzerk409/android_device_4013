@@ -7,8 +7,8 @@ VENDOR_PATH := vendor/alcatel/4013
 # Release name
 PRODUCT_RELEASE_NAME := 4013
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common Resurrection stuff.
+$(call inherit-product, vendor/rr/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/alcatel/4013/device_4013.mk)
@@ -18,11 +18,11 @@ PRODUCT_LOCALES := en_US ru_RU en_AU en_IN fr_FR it_IT es_ES et_EE de_DE nl_NL c
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := 4013
-PRODUCT_NAME := lineage_4013
-PRODUCT_BRAND := alcatel
-PRODUCT_MODEL := alcatel 4013
-PRODUCT_MANUFACTURER := alcatel
+PRODUCT_NAME := rr_4013
+PRODUCT_BRAND := Alcatel
+PRODUCT_MODEL := Alcatel 4013
+PRODUCT_MANUFACTURER := Alcatel
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="alcatel 4013" \
-    DEVICE_MAINTAINERS="melek saidani"
+    PRODUCT_NAME="Alcatel 4013" \
+    DEVICE_MAINTAINERS="Melek Saidani"
