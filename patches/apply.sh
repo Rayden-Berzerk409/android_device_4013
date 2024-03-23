@@ -23,6 +23,12 @@
 
  cd ../../../
  
+ cd vendor*/code*/telepho*
+ cd ims/src/org/codeaurora/ims/utils/
+ cp QtiImsExtUtils.java ../../../../../../../../../device/alcatel/4013/backup/QtiImsExtUtils.java
+ sudo rm -rf QtiImsExtUtils.java
+ cp ../../../../../../../../../device/alcatel/4013/patches/QtiImsExtUtils.java QtiImsExtUtils.java
+ cd ../../../../../../../../../
  cd system/sepolicy
  cp mediaserver.te ../../device/alcatel/4013/backup/mediaserver.te
  sudo rm -rf mediaserver.te
